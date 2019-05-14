@@ -207,7 +207,9 @@ header {
 }
 
 header .logo img {
-    max-width: 100px;
+    min-width: 150px;
+    /* max-width: 100px; */
+    max-height: 70px;
 
 }
 
@@ -252,7 +254,7 @@ nav.nav-wrapper ul li {
 nav.nav-wrapper ul li a {
     font-size: 17px;
     line-height: 22px;
-    color: aliceblue;
+    color: rgb(192, 0, 0);
     text-decoration: none;
     border-bottom: 1px solid transparent;
     padding-bottom: 3px;
@@ -268,8 +270,8 @@ nav.nav-wrapper ul li a:hover {
 /* PARALLAX PAGE */
 
 .cover-main {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../images/hero-bg.jpg') right bottom;
-    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../images/tlo-prl-2.jpg') right bottom;
+    height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
 
