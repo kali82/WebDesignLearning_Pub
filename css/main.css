@@ -207,9 +207,9 @@ header {
 }
 
 header .logo img {
-    min-width: 150px;
-    /* max-width: 100px; */
-    max-height: 70px;
+    margin: 10px;
+    min-width: 120px;
+    max-height: 120px;
 
 }
 
@@ -222,6 +222,13 @@ header.sticky {
     background: rgba(0, 0, 0, 0.85);
     transition: 0.5s ease-out;
     z-index: 5;
+}
+
+body.scroll header.sticky .logo img {
+    max-width: 25px;
+    max-height: 75px;
+    margin: 0;
+    src: url(../images/tlo-prl-2.jpg);
 }
 
 body.scroll header.sticky {
@@ -254,7 +261,7 @@ nav.nav-wrapper ul li {
 nav.nav-wrapper ul li a {
     font-size: 17px;
     line-height: 22px;
-    color: rgb(192, 0, 0);
+    color: whitesmoke;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     padding-bottom: 3px;
@@ -275,6 +282,7 @@ nav.nav-wrapper ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 
+
 }
 
 ul#scene {
@@ -287,10 +295,10 @@ ul#scene {
 
 ul#scene li.name {
     text-align: center;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 35px;
+    line-height: 35px;
     color: white;
-    text-transform: uppercase;
+
     max-width: 100%;
     position: relative !important;
 
@@ -298,10 +306,10 @@ ul#scene li.name {
 
 ul#scene li.title {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
-    text-transform: uppercase;
-    line-height: 35px;
+
+    line-height: 45px;
     width: 100%;
     margin-top: 60px;
 }
@@ -345,6 +353,7 @@ ul#scene li.btn {
 
 .masonry-grid {
     position: relative;
+
 }
 
 .grid {
@@ -353,7 +362,19 @@ ul#scene li.btn {
 }
 
 .grid-item {
-    width: 450px;
+    width: 350px;
+}
+
+.grid-item img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.grid-item:hover img {
+    -webkit-transform: scale(0.95);
+    transition: 0.3s ease-out;
 }
 
 .tall-img {
@@ -394,6 +415,10 @@ section.beating-heart {
     align-self: center;
     margin-top: 50px;
 
+}
+
+section.beating-heart p {
+    margin-bottom: 50px;
 }
 
 section.beating-heart h2::after {
@@ -476,6 +501,7 @@ section.beating-heart span {
 
 footer {
     margin-top: 20px;
+
 }
 
 .foot-wrapper {
@@ -490,6 +516,13 @@ footer {
     color: white;
 }
 
+.foot-copyright {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    text-align: center;
+    padding: 17px 0 5px 0;
+}
+
 .foot-wrapper ul li {
     display: inline-block;
     padding: 20px;
@@ -499,4 +532,38 @@ footer {
 .foot-wrapper ul li i {
     font-size: 1.5rem;
     color: white;
+}
+
+.foot-row {
+    margin: auto;
+    position: relative;
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+}
+
+.foot-column {
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+
+.foot-title {
+    position: relative;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-align: center;
+    align-content: center;
+}
+
+.foot-title::after {
+    display: block;
+    height: 1px;
+    content: "";
+    width: 35px;
+    background-color: white;
+    margin: 2px auto;
 }
