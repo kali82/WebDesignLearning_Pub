@@ -374,6 +374,7 @@ ul#scene li.btn {
 
 .grid-item:hover img {
     -webkit-transform: scale(0.95);
+    transform: scale(.95);
     transition: 0.3s ease-out;
 }
 
