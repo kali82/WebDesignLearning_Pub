@@ -18,7 +18,8 @@
 
 <body>
 
-    <section class="cover-main">
+    <div class="main-overlay js-main-overlay"></div>
+    <section class="cover-main" id="home">
         <header>
             <nav class="nav-wrapper">
                 <div class="logo">
@@ -28,22 +29,23 @@
                 </div>
                 <ul class="menu">
                     <li>
-                        <a href="#">O nas</a>
+                        <a href="#home">Strona Głowna</a>
                     </li>
                     <li>
                         <a href="#">Menu</a>
                     </li>
                     <li>
-                        <a href="#">Galeria</a>
+                        <a href="#gallery">Galeria</a>
                     </li>
                     <li>
-                        <a href="#">Praca</a>
+                        <a href="#about">O nas</a>
                     </li>
                     <li>
-                        <a href="#">Kontakt</a>
+                        <a href="#footer">Godz otwarcia</a>
                     </li>
                 </ul>
             </nav>
+            <div class="menu-trigger js-menu-trigger"></div>
         </header>
 
         <div class="wrapper">
@@ -57,9 +59,28 @@
                 </li>
             </ul>
         </div>
+        <div class="menu-day">
+            <h2></h2>
+            <ul>
+                <li class="soup">Zupa Neapolitańska</li>
+                <li class="soup">Zupa Wiosenna</li>
+                <li>Ziemniaczki</li>
+                <li>Kotlet Schabowy</li>
+                <li>Kotlet Mielony</li>
+                <li>Gołąbki</li>
+                <li>Mizeria</li>
+                <li>Buraczki</li>
+                <li class="desert">Kompot</li>
+            </ul>
+            <div class="overlay">
+                <span>Zadzwon i zamow ;)</span>
+                <a href="tel:530335264"> <i class="fas fa-phone"></i> </a>
+
+            </div>
+        </div>
     </section>
 
-    <section class="masonry-grid" id="work">
+    <section class="masonry-grid" id="gallery">
 
         <h2 class="sub-title">Galeria</h2>
 
@@ -156,25 +177,25 @@
 
         <div class="glider">
             <div class="glide">
-                <img src="images/six.jpg" data-lightbox="six" alt="" class="img-responsive">
+                <img src="images/drin.jpg" data-lightbox="six" alt="" class="img-responsive">
             </div>
             <div class="glide">
-                <img src="images/seven.jpg" alt="" class="img-responsive">
+                <img src="images/edd2.jpg" alt="" class="img-responsive">
             </div>
             <div class="glide">
-                <img src="images/one.jpg" alt="" class="img-responsive">
+                <img src="images/kamikadze.jpg" alt="" class="img-responsive">
             </div>
             <div class="glide">
-                <img src="images/eleven.jpg" alt="" class="img-responsive">
+                <img src="images/lachony.jpg" alt="" class="img-responsive">
             </div>
             <div class="glide">
-                <img src="images/eight.jpg" alt="" class="img-responsive">
+                <img src="images/ogrodek.jpg" alt="" class="img-responsive">
             </div>
             <div class="glide">
-                <img src="images/five.jpg" alt="" class="img-responsive">
+                <img src="images/tequilla.jpg" alt="" class="img-responsive">
             </div>
             <div class="glide">
-                <img src="images/nine.jpg" alt="" class="img-responsive">
+                <img src="images/tlum.jpg" alt="" class="img-responsive">
             </div>
         </div>
 
@@ -228,11 +249,7 @@
                 <p> <a href="#">Praca</a></p>
                 <p> <a href="#">Kontakt</a></p>
             </div>
-            <div class="foot-column">
-                <div class="foot-title">
-                    Kontakt
-                </div>
-            </div>
+
         </div>
 
 

@@ -347,6 +347,84 @@ ul#scene li.btn {
     color: black;
 }
 
+.menu-day {
+    right: 5px;
+    bottom: 25%;
+    position: absolute;
+
+    font-family: 'Homemade Apple', cursive;
+    background: url(../images/tablica-menu.jpg);
+    background-size: cover;
+    background-repeat: round;
+    border: 5px solid rgba(10, 10, 10, 0.109);
+    border-radius: 35px;
+}
+
+.overlay {
+    width: 100%;
+    display: none;
+    bottom: 0;
+    height: 20%;
+    transition: 2s;
+
+}
+
+.overlay i {
+    color: wheat;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.menu-day:hover .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0px 0px 35px 35px;
+    text-align: center;
+    color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-day h2 {
+    text-align: center;
+    color: #E19396;
+    margin-top: 10px;
+}
+
+
+
+.menu-day ul li:before {
+    content: '\2713';
+    margin: 0 1em;
+}
+
+.menu-day ul {
+    list-style: none;
+    padding: 25px;
+    width: 100%;
+    color: #9ED7D6;
+    font-size: 2em;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.menu-day li.desert {
+    color: #FFFFBF;
+}
+
+.menu-day li.soup {
+    color: #E19396;
+}
+
+.menu-day li.desert:after {
+    content: '14,99 zł';
+    font-size: 1.3rem;
+    color: whitesmoke;
+    margin: 0 1em;
+}
+
+
 /* PARALLAX PAGE END */
 
 /* MASONRY GRID  */
@@ -403,7 +481,7 @@ h2.sub-title::after {
 /* MASONRY GRID  END */
 
 section.beating-heart {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images//hero-bg.jpg) bottom right;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../images/tlo_about.png) bottom right;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -535,6 +613,10 @@ footer {
     color: white;
 }
 
+.foot-wrapper ul li i:hover {
+    color: rgba(253, 251, 251, 0.527);
+}
+
 .foot-row {
     margin: auto;
     position: relative;
@@ -552,6 +634,15 @@ footer {
     width: 25%;
 }
 
+.foot-column p a {
+    text-decoration: none;
+    color: white;
+}
+
+.foot-column p a:hover {
+    color: rgba(253, 251, 251, 0.527);
+}
+
 .foot-title {
     position: relative;
     margin-bottom: 15px;
@@ -567,4 +658,88 @@ footer {
     width: 35px;
     background-color: white;
     margin: 2px auto;
+}
+
+/* REsponsive navigation menu */
+
+@media only screen and (max-width: 960px) {
+
+    .menu-trigger {
+        width: 35px;
+        height: 35px;
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        display: block;
+        z-index: 10;
+        background: url(../images/hamburger-icon.svg) no-repeat center / cover;
+    }
+
+    .main-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        z-index: 5;
+
+    }
+
+    .main-overlay::after {
+        background: url(../images/close-icon.svg) no-repeat center / cover;
+        width: 35px;
+        height: 35px;
+        display: block;
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 20;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: #131313;
+        width: 100%;
+        max-width: 300px;
+        z-index: 30;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    nav.nav-wrapper ul li {
+        display: block;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+
+    }
+
+    nav.nav-wrapper ul li a {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    nav.nav-wrapper ul li a:hover {
+        border-color: transparent;
+    }
+
+    body.menu-active .menu {
+        transform: translate3d(0, 0, 0);
+        display: block;
+        padding: 0 15px;
+    }
+
+    body.menu-active .main-overlay {
+        display: block;
+    }
+
+    body.menu-active .menu-trigger {
+        display: none;
+    }
+
 }
