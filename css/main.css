@@ -278,7 +278,8 @@ nav.nav-wrapper ul li a:hover {
 
 .cover-main {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../images/tlo-prl-2.jpg') right bottom;
-    height: 80vh;
+
+    height: 110vh;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -296,8 +297,9 @@ ul#scene {
 ul#scene li.name {
     text-align: center;
     font-size: 35px;
-    line-height: 35px;
+    line-height: 45px;
     color: white;
+
 
     max-width: 100%;
     position: relative !important;
@@ -311,11 +313,11 @@ ul#scene li.title {
 
     line-height: 45px;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 110px;
 }
 
 ul#scene li.btn {
-    margin-top: 150px;
+    margin-top: 190px;
     width: 100%;
     text-align: center;
 }
@@ -323,6 +325,8 @@ ul#scene li.btn {
 .portfolio-btn,
 .contact-btn {
     margin: 0 auto;
+    text-align: center;
+    margin: auto auto;
     border: 1px solid white;
     padding: 10px 20px;
     color: white;
@@ -334,10 +338,11 @@ ul#scene li.btn {
 }
 
 .portfolio-btn {
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .contact-btn {
+    margin-top: 10px;
     margin-left: 30px;
 }
 
@@ -487,7 +492,7 @@ section.beating-heart {
     color: white;
     padding: 50px 10px;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -588,7 +593,7 @@ footer {
     position: relative;
     padding: 7px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 30px;
     background: black;
@@ -672,6 +677,7 @@ footer {
         position: absolute;
         display: block;
         z-index: 10;
+        cursor: pointer;
         background: url(../images/hamburger-icon.svg) no-repeat center / cover;
     }
 
@@ -696,6 +702,7 @@ footer {
         position: absolute;
         top: 10px;
         right: 10px;
+        cursor: pointer;
         z-index: 20;
     }
 
@@ -742,4 +749,26 @@ footer {
         display: none;
     }
 
+}
+
+@media only screen and (max-height: 450px) {
+    .cover-main {
+
+        height: 150vh;
+
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    ul#scene li.name {
+        margin-bottom: 550px;
+    }
+
+    ul#scene li.title {
+        margin-top: 155px;
+    }
+
+    ul#scene li.btn-main {
+        margin-top: 250px;
+    }
 }
