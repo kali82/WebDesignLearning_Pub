@@ -1,13 +1,13 @@
 $(document).ready(function () {
 
     window.onload = () => {
-        'use strict';
-      
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker
-                   .register('./sw.js');
-        }
-      }
+  'use strict';
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('./sw.js');
+  }
+}
 
 
     var $header = $('header');
