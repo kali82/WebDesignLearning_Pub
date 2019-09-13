@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+    window.onload = () => {
+        'use strict';
+      
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('./sw.js');
+        }
+      }
+
 
     var $header = $('header');
     var $sticky = $header.before($header.clone().addClass("sticky"));
